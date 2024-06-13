@@ -1,0 +1,3 @@
+# Well, that's about it... 
+
+Just a repo to share some code with my students who just had their exams. Katas were fun though. 
