@@ -24,14 +24,14 @@ describe('evaluatePrice (3 points)', () => {
         assert.equal(actualPrice, expectedPrice);
     });
 
-    it('should handle edge cases with very low individual ticket prices (0.5 pt)', () => {
+    it('should handle edge cases with very low individual ticket prices, lower than the group tickets for everyone (0.5 pt)', () => {
         const input = [0.01, 50, 26];
         const expectedPrice = 0.26;
         const actualPrice = evaluatePrice(input);
         assert.equal(actualPrice, expectedPrice);
     });
 
-    it('should handle edge cases by picking individual price when group ticket prices are high (0.5 pt)', () => {
+    it('should handle edge cases by picking individual price when group ticket prices are very high (0.5 pt)', () => {
         const input = [6, 10000, 26];
         const expectedPrice = 156;
         const actualPrice = evaluatePrice(input);
